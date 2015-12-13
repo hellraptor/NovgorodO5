@@ -17,74 +17,81 @@
     </div>
     <div>
         <div class="container">
-            <form role="form">
-
+            <div class="well well-small">
+                <div id="heading21" class="masthead">
+                    <h4 class="muted">Настройка общих параметров</h4>
+                    <span class="bg-danger" id="error21"></span>
+                </div>
                 <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Ярлык эскиза</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>
-                            </div>
+                    <div class="form-group">
+                        <label for="host" class="col-sm-3 control-label">Скорость ветра</label>
+
+                        <div class="col-sm-8">
+                            <input id="host" class="form-control" type="range" min="0" max="100" step="1" value="50">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="token" class="col-sm-3 control-label">Снегопад</label>
+
+                        <div class="col-sm-8">
+                            <input id="token" class="form-control" type="range" min="0" max="100" step="1" value="50">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="content" class="col-sm-3 control-label">Освещенность</label>
+
+                        <div class="col-sm-8">
+                            <input id="content" class="form-control" type="range" min="0" max="100" step="1" value="50">
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="well well-small">
 
-                <div class="form-group">
-                    <label for="host" class="col-sm-3 control-label">Скорость ветра</label>
-
-                    <div class="col-sm-8">
-                        <input id="host" class="form-control" type="range" min="0" max="100" step="1" value="50">
-                    </div>
+                <div id="heading1" class="masthead">
+                    <h4 class="muted">Настройка параметров волн</h4>
+                    <span class="bg-danger" id="error1"></span>
                 </div>
-                <div class="form-group">
-                    <label for="token" class="col-sm-3 control-label">Снегопад</label>
 
-                    <div class="col-sm-8">
-                        <input id="token" class="form-control" type="range" min="0" max="100" step="1" value="50">
+                <div class="row">
+
+                    <div class="form-group">
+                        <label for="host" class="col-sm-3 control-label">Скорость волн</label>
+
+                        <div class="col-sm-8">
+                            <input id="host1" class="form-control" type="range" min="0" max="100" step="1"
+                                   value="50">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="content" class="col-sm-3 control-label">Освещенность</label>
+                    <div class="form-group">
+                        <label for="token" class="col-sm-3 control-label">Высота волн</label>
 
-                    <div class="col-sm-8">
-                        <input id="content" class="form-control" type="range" min="0" max="100" step="1" value="50">
+                        <div class="col-sm-8">
+                            <input id="token1" class="form-control" type="range" min="0" max="100" step="1"
+                                   value="50">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="query" class="col-sm-3 control-label">Structure:</label>
+                    <div class="form-group">
+                        <label for="content" class="col-sm-3 control-label">Длинна волн</label>
 
-                    <div class="col-sm-8">
-                        <input id="structure" class="form-control" type="range" min="0" max="100" step="1" value="50">
+                        <div class="col-sm-8">
+                            <input id="content1" class="form-control" type="range" min="0" max="100" step="1"
+                                   value="50">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="query" class="col-sm-3 control-label">Query id:</label>
 
-                    <div class="col-sm-8">
-                        <input id="query" class="form-control" type="range" min="0" max="100" step="1" value="50">
-                    </div>
                 </div>
-            </form>
-        </div>
-        <br><br>
-
-        <div class="btn btn-default" id="hello">Hello</div>
-        <div class="btn btn-default" id="ping">Ping</div>
-        <div class="btn btn-success" id="connect">Connect</div>
-        <div class="btn btn-danger" id="disconnect">Disconnect</div>
-        <div class="btn btn-info" id="start">Open WebSocket</div>
-        <div class="btn btn-success" id="send">Search</div>
-        <div class="btn btn-default" id="cancel">Cancel Query</div>
-        <div class="btn btn-default" id="contentOverview">Content Overview</div>
-        <div class="container">
-            <div id="startStatus" class="bg-success"></div>
-            <div id="sendStatus" class="bg-success"></div>
-            <div id="cancelStatus" class="bg-success"></div>
+            </div>
         </div>
     </div>
-    <div class="container" id="result"></div>
+    <br><br>
+
+    <div class="btn btn-default" id="hello">Сбросить настройки</div>
+    <div class="btn btn-success" id="ping">Применить настройки</div>
+
+
+</div>
+<div class="container" id="result"></div>
 </div>
 
 <!-- 3rd party -->
